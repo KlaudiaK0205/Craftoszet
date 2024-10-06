@@ -176,7 +176,7 @@ header .orderBtn {
 }
 
 .hero {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/bg.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(.../images/bg.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -277,7 +277,8 @@ header .orderBtn {
 }
 
 .product-card {
-  background-color: #f8f1e9;
+  background-image: url(/images/silver.jpg);
+  background-repeat: no-repeat;
   padding: 15px;
   margin: 10px;
   width: calc(25% - 20px); /* 4 karty w wierszu */
