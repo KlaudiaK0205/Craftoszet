@@ -1,0 +1,41 @@
+.hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4), 
+        rgba(47, 48, 58, 0.4)),
+        url(/images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    pa
+    min-height: 100vh; /* Zapewnia, że sekcja zajmie co najmniej wysokość widoku */
+    text-align: center;
+    padding: 150px 0 200px;
+}
+
+.hero .container {
+    
+
+}
+.hero__header {
+    font-size: 70px;
+    font-weight: 800;
+    padding-bottom: 40px;
+    color: var(--mainColor);
+    letter-spacing: 0.2em;
+
+}
+
+.hero__undertitle {
+    font-family: var(--second-font);
+    font-size: 56px;
+    font-weight: 500; 
+    color: var(--mainColor);
+    letter-spacing: 0.1em;
+    padding-bottom: 100px;
+
+}
+
+.hero .orderBtn {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}

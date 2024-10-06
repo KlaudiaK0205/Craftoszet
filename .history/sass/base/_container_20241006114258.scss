@@ -1,0 +1,36 @@
+.container {
+    d
+    width: 100%;
+    max-width: 1200px; /* Maksymalna szerokość dla dużych ekranów */
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Urządzenia mobilne (do 576px szerokości) */
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%; /* Na małych ekranach szerokość 100% */
+        padding: 0 10px;  /* Mniejszy padding na telefonach */
+    }
+}
+
+/* Tablety (do 768px szerokości) */
+@media (max-width: 768px) {
+    .container {
+        max-width: 720px; /* Dostosowanie dla tabletów */
+    }
+}
+
+/* Średnie ekrany (do 992px szerokości) */
+@media (max-width: 992px) {
+    .container {
+        max-width: 960px; /* Dostosowanie dla większych tabletów i mniejszych laptopów */
+    }
+}
+
+/* Duże ekrany (od 1200px szerokości) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px; /* Ustawienia dla monitorów */
+    }
+}

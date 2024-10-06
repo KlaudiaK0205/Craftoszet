@@ -1,0 +1,60 @@
+header {
+    background-color: var(--bgColor);
+    padding: 20px 0;
+    
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-box {
+    margin-right: 70px;
+}
+
+.logo-image {
+}
+
+.nav {
+    
+}
+
+.nav__list {
+    display: flex;
+
+}
+
+.nav__list__item {
+    font-size: 20px;
+
+    &:not(:last-child) {
+        margin-right: 1.5vw;
+    }
+}
+
+.nav__list__link {
+    color: #ECEBEB;
+    transition: cubic-bezier(0.4, 0, 0.2, 1) 500ms;
+
+    &:hover,
+    :focus {
+        color: var(--brandColor);
+    }
+}
+
+.buyBtn {
+    font-size: 20px;
+    color: var(--mainColor);
+    background-color: var(--brandColor);
+    border: none;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: 70px;
+    padding: 15px 25px;
+
+    &:hover,
+    :focus {
+        transform: scale(1.2);
+    }
+}

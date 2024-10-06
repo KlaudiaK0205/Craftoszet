@@ -1,0 +1,26 @@
+.whatIDo {
+    display: flex;
+    align-items: center; /* Wyrównuje elementy w pionie */
+    padding: 20px; /* Przykładowy padding */
+}
+
+.whatIDo-images {
+    flex: 1; /* Obrazki zajmują 1 część dostępnej przestrzeni */
+    display: flex; /* Flexbox dla obrazków */
+    flex-direction: column; /* Układ pionowy dla obrazków */
+    gap: 10px; /* Odstęp między obrazkami */
+}
+
+.whatIDo-image {
+    max-width: 100%; /* Zapewnia, że obrazy są responsywne */
+    height: auto; /* Utrzymuje proporcje obrazków */
+}
+
+.whatIDo-description {
+}
+
+.section-header {
+}
+
+.section-text {
+}

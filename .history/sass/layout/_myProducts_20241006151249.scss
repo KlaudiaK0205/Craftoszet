@@ -1,0 +1,51 @@
+.myProducts {
+    
+
+}
+
+.myProducts .container {
+
+
+}
+
+.product-gallery {
+    padding: 20px;
+}
+
+.filters {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.filter-btn {
+    margin-right: 10px;
+    padding: 10px 15px;
+    background-color: var(--brandColor);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.filter-btn:hover {
+    box-shadow: 2px 2px black;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: #f8f1e9;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px;
+    width: calc(25% - 20px); /* 4 karty w wierszu */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.productImg {
+    width: 400px;
+    border-radius: 25px;
+}

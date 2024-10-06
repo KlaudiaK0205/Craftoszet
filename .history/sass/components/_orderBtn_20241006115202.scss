@@ -1,0 +1,28 @@
+.orderBtn {
+    font-size: 20px;
+    color: var(--mainColor);
+    background-color: var(--brandColor);
+    border: none;
+    border-radius: 25px;
+    margin-left: auto;
+    padding: 15px 25px;
+
+    &:hover,
+    :focus {
+        animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+}
+
+//animations
+.scale-up-center {
+	animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes scale-up-center {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

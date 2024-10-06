@@ -1,0 +1,91 @@
+// .whatIDo {
+//     background-color: var(--bgColor);
+//     padding: 50px 0;
+//     height: 800px;
+// }
+
+// .whatIDo .container {
+//     display: grid; 
+//     grid-template-columns: 1fr 1fr; 
+//     grid-template-rows: 1fr; 
+//     gap: 0px 0px; 
+//     grid-template-areas: 
+//     "images whatIDo"; 
+// }
+// .whatIDo-images {
+//     display: flex;
+//     flex-direction: column; /* Ustawia obrazy w kolumnie */
+//     justify-content: center; /* Centruje obrazy w kontenerze */
+//     align-items: flex-start; /* Ustawia obrazy po lewej stronie */
+//     grid-area: images;
+//     padding-right: 20px;
+//     max-width: 100%;
+// }
+
+// .whatIDo-image {
+//     width: 300px;
+// }
+
+// .whatIDo-description {
+//     width: 100%; /* Umożliwia elastyczne dostosowywanie się do kontenera */
+//     max-width: 400px; /* Ogranicza szerokość opisu */
+//     grid-area: whatIDo;
+//     font-size: 45px;
+// }
+
+// .section-header {
+//     font-family: var(--decorative-font);
+//     font-size: 64px;
+//     letter-spacing: 0.1em;
+//     text-align: center;
+//     color: #8D7966;
+//     padding-bottom: 30px;
+// }
+
+// .section-text {
+// }
+.whatIDo {
+    background-color: var(--bgColor);
+    padding: 50px 0;
+    height: auto; /* Zmiana na auto */
+}
+
+.whatIDo .container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 0px; 
+    grid-template-areas: 
+    "images whatIDo"; 
+}
+
+.whatIDo-images {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: flex-start; 
+    grid-area: images;
+    padding-right: 20px;
+}
+
+.whatIDo-image {
+    max-width: 100%; /* Zmiana na max-width */
+    height: auto; /* Utrzymuje proporcje */
+}
+
+.whatIDo-description {
+    max-width: 400px; /* Ogranicza szerokość opisu */
+    grid-area: whatIDo;
+    font-size: 45px;
+}
+
+.section-header {
+    font-family: var(--decorative-font);
+    font-size: 64px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #8D7966;
+    padding-bottom: 30px;
+}
+
+.section-text {
+}

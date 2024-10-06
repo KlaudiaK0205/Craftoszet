@@ -1,0 +1,32 @@
+.whatIDo {
+    display: flex; /* Umożliwia elastyczne rozmieszczanie elementów */
+    align-items: center; /* Wyrównuje elementy w pionie */
+    padding: 20px; /* Przykładowy padding */
+}
+
+.whatIDo-images {
+    flex: 1; /* Obrazki zajmują 1 część dostępnej przestrzeni */
+    display: flex; /* Flexbox dla obrazków */
+    flex-direction: column; /* Układ pionowy dla obrazków */
+    gap: 10px; /* Odstęp między obrazkami */
+}
+
+.whatIDo-image {
+    max-width: 100%; /* Zapewnia, że obrazy są responsywne */
+    height: auto; /* Utrzymuje proporcje obrazków */
+}
+
+.whatIDo-description {
+    flex: 1; /* Tekst zajmuje 1 część dostępnej przestrzeni */
+    padding-left: 20px; /* Odstęp od obrazków */
+}
+
+.section-header {
+    font-size: 2em; /* Przykładowy rozmiar czcionki dla nagłówka */
+    margin-bottom: 10px; /* Odstęp dolny */
+}
+
+.section-text {
+    font-size: 1.2em; /* Przykładowy rozmiar czcionki dla tekstu */
+    line-height: 1.5; /* Wysokość linii dla lepszej czytelności */
+}

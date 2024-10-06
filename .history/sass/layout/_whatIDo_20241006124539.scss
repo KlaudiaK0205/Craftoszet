@@ -1,0 +1,36 @@
+.whatIDo {
+    p
+}
+
+.whatIDo .container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "images whatIDo"; 
+}
+.whatIDo-images {
+    display: flex;
+    grid-area: images;
+    padding-right: 20px;
+}
+
+.whatIDo-image {
+    width: 300px;
+}
+
+.whatIDo-description {
+    width: 400px;
+    grid-area: whatIDo;
+}
+
+.section-header {
+    font-family: var(--decorative-font);
+    font-size: 64px;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+.section-text {
+}

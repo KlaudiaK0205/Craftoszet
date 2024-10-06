@@ -1,0 +1,385 @@
+@charset "UTF-8";
+body {
+  font-family: var(--main-font);
+  background-color: var(--bgColor);
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px; /* Maksymalna szerokość dla dużych ekranów */
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Urządzenia mobilne (do 576px szerokości) */
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%; /* Na małych ekranach szerokość 100% */
+    padding: 0 10px; /* Mniejszy padding na telefonach */
+  }
+}
+/* Tablety (do 768px szerokości) */
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px; /* Dostosowanie dla tabletów */
+  }
+}
+/* Średnie ekrany (do 992px szerokości) */
+@media (max-width: 992px) {
+  .container {
+    max-width: 960px; /* Dostosowanie dla większych tabletów i mniejszych laptopów */
+  }
+}
+/* Duże ekrany (od 1200px szerokości) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px; /* Ustawienia dla monitorów */
+  }
+}
+.howOrder-icon {
+  width: 40px;
+  height: 40px;
+  fill: var(--brandColor);
+}
+
+.logo-image {
+  width: 150px;
+  height: 100px;
+  animation: wobble-hor-bottom 10s infinite both;
+}
+
+@keyframes wobble-hor-bottom {
+  0%, 100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+.orderBtn {
+  font-size: 20px;
+  color: var(--mainColor);
+  background-color: var(--brandColor);
+  border: none;
+  border-radius: 25px;
+  margin-left: auto;
+  padding: 15px 25px;
+}
+.orderBtn:hover,
+.orderBtn :focus {
+  animation: scale-up-center 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@keyframes scale-up-center {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+header {
+  padding: 20px 0;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-box {
+  margin-right: 70px;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__list__item {
+  font-size: 20px;
+}
+.nav__list__item:not(:last-child) {
+  margin-right: 1.5vw;
+}
+
+.nav__list__link {
+  color: var(--textColor);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 500ms;
+}
+.nav__list__link:hover,
+.nav__list__link :focus {
+  color: var(--brandColor);
+}
+
+header .orderBtn {
+  margin-left: auto;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  min-height: 80vh;
+  text-align: center;
+  padding: 300px 0 250px;
+}
+
+.hero__header {
+  font-size: 70px;
+  font-weight: 800;
+  padding-bottom: 40px;
+  color: var(--textColor);
+  letter-spacing: 0.2em;
+}
+
+.hero__undertitle {
+  font-family: var(--decorative-font);
+  font-size: 56px;
+  font-weight: 500;
+  color: var(--textColor);
+  letter-spacing: 0.1em;
+  padding-bottom: 100px;
+  text-shadow: 2px 2px var(--textShadow);
+}
+
+.hero .orderBtn {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.howOrder {
+  padding: 100px 0;
+}
+
+.howOrder .container {
+  display: flex;
+  align-items: center;
+}
+
+.howOrder .section-header {
+  text-align: center;
+}
+
+.howOrder-image {
+  width: 700px;
+  margin-left: 40px;
+  border-radius: 25px;
+}
+
+.howOrder__item {
+  display: flex;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  color: var(--sectionTextColor);
+  padding-bottom: 20px;
+  align-items: center;
+}
+
+.howOrder-icon {
+  margin-right: 10px;
+}
+
+.howOrder .orderBtn {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.product-gallery {
+  padding: 20px;
+}
+
+.filters {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.filter-btn {
+  margin-right: 10px;
+  padding: 10px 15px;
+  background-color: var(--brandColor);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.filter-btn:hover {
+  background-color: var(--sectionTextColor);
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  background-color: #f8f1e9;
+  padding: 15px;
+  margin: 10px;
+  width: calc(25% - 20px); /* 4 karty w wierszu */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.product-card:hover,
+.product-card :focus {
+  transform: scale(1.5);
+}
+
+.productImg {
+  width: 400px;
+  border-radius: 25px;
+}
+
+.productName {
+  padding: 15px 0;
+  color: var(--brandColor);
+}
+
+.size,
+.productionTime,
+.price {
+  color: var(--sectionTextColor);
+}
+.size:not(:last-child),
+.productionTime:not(:last-child),
+.price:not(:last-child) {
+  padding-bottom: 10px;
+}
+
+span {
+  font-weight: 700;
+}
+
+.whatIDo {
+  padding: 100px 0;
+}
+
+.whatIDo .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr;
+  grid-template-areas: "images whatIDo" ". whatIDo";
+}
+
+.whatIDo-images {
+  display: flex;
+  grid-area: images;
+  align-items: center;
+}
+
+.whatIDo-image {
+  width: 250px;
+  height: 350px;
+  border-radius: 25px;
+}
+.whatIDo-image:not(:last-child) {
+  padding-right: 10px;
+}
+
+.whatIDo-description {
+  grid-area: whatIDo;
+  font-size: 20px;
+  text-align: center;
+}
+
+.section-header {
+  font-family: var(--decorative-font);
+  font-size: 48px;
+  letter-spacing: 0.1em;
+  text-shadow: 2px 2px var(--textShadow);
+  color: var(--textColor);
+  padding-bottom: 30px;
+}
+
+.section-text,
+.section-text2 {
+  letter-spacing: 0.02em;
+  color: var(--sectionTextColor);
+  line-height: 1.333;
+}
+
+.section-text2 {
+  padding-top: 20px;
+}
+
+.whatIDo .orderBtn {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+:root {
+  --main-font: "Inter" , sans-serif;
+  --decorative-font: "Sacramento", sans-serif;
+  --textColor: #ECEBEB;
+  --mainColor: #E2DDD9;
+  --textShadow: #A8a39d;
+  --sectionTextColor: #8D7966;
+  --brandColor: #33093b;
+  --bgColor: #D8C8B8;
+}/*# sourceMappingURL=main.css.map */

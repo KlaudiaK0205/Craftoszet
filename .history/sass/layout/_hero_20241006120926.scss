@@ -1,0 +1,25 @@
+.hero {
+    text-align: center;
+
+}
+
+.hero .container {
+
+}
+.hero__header {
+    font-size: 70px;
+    font-weight: 800;
+    padding-bottom: 40px;
+    color: var(--mainColor);
+    letter-spacing: 0.2em;
+
+}
+
+.hero__undertitle {
+}
+
+.hero .orderBtn {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}

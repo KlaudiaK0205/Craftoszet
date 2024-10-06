@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craftoszet</title>
+    <!-- FAVICON -->
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="icon" siezes="16x16" href="./images/favicon-16x16.png" type="image/png">
+    <link rel="icon" siezes="32x32" href="./images/favicon-32x32.png" type="image/png">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sacramento&display=swap" rel="stylesheet">
+    <!-- MODERN NORMALIZE -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css">
+    <!-- ANIMATE-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./sass/main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-box">
+                <img class="logo-image" src="./images/logo.png" alt="a ball of wool">
+            </div>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__list__item">
+                        <a href="" class="nav__list__link">Home</a>
+                    </li>
+                    <li class="nav__list__item">
+                        <a href="" class="nav__list__link">Czym się zajmuję?</a>
+                    </li>
+                    <li class="nav__list__item">
+                        <a href="" class="nav__list__link">Jak zamówić?</a>
+                    </li>
+                    <li class="nav__list__item">
+                        <a href="" class="nav__list__link">Moje projekty</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="orderBtn" type="button">Złóż zamówienie</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero__header">CRAFTOSZET</h1>
+                <p class="hero__undertitle">Z pasji do włóczki – ręcznie tworzone z sercem</p>
+                <button class="orderBtn" type="button">Złóż zamówienie</button>
+            </div>
+        </section>
+
+        <section class="whatIDo">
+            <div class="container">
+                    <div class="whatIDo-images">
+                        <img class="whatIDo-image" src="./images/projekty/fioletowa lalka.jpg" alt="fioletowa lalka z włóczki">
+                        <img class="whatIDo-image" src="./images/projekty/króliczek.jpg" alt="króliczek w niebieskich spodenkach z włóczki">
+                </div>
+                <div class="whatIDo-description">
+                    <h2 class="section-header">Czym się zajmuję?</h2>
+                    <p class="section-text">Tworzę unikatowe, ręcznie robione ozdoby i maskotki na drutach, które łączą tradycję z nowoczesnym designem. 
+                        Każdy projekt powstaje z pasji i dbałości o najdrobniejsze detale. 
+                        Włóczka to mój materiał, z którego wyplatam radość i ciepło, tworząc wyjątkowe przedmioty, które cieszą nie tylko oko, ale również duszę. 
+                        Każda moja praca to małe dzieło sztuki, które wnosi do Twojego wnętrza niepowtarzalny klimat. 
+                        <p class="section-text2">Wierzę, że piękno tkwi w indywidualności i ręcznej pracy.</p>
+                    <button class="orderBtn" type="button">Złóż zamówienie</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="howOrder">
+            <div class="container">
+                <div>
+                    <h2 class="section-header">Jak zamówić?</h2>
+                    <ul class="howOrder__list">
+                        <li class="howOrder__item">
+                            <svg class="howOrder-icon">
+                                <use href="./images/sprite.svg#icon-wool-ball"></use>
+                            </svg>
+                            Wybierz projekt
+                        </li>
+                        <li class="howOrder__item">
+                            <svg class="howOrder-icon">
+                                <use href="./images/sprite.svg#icon-wool-ball"></use>
+                            </svg>
+                            Wypełnij formularz "Złóż zamówienie"
+                        </li>
+                        <li class="howOrder__item">
+                            <svg class="howOrder-icon">
+                                <use href="./images/sprite.svg#icon-wool-ball"></use>
+                            </svg>
+                            Potwierdź swoje zamówienie
+                        </li>
+                        <li class="howOrder__item">
+                            <svg class="howOrder-icon">
+                                <use href="./images/sprite.svg#icon-wool-ball"></use>
+                            </svg>
+                            Zrelaksuj się czekając na swoje zamówienie
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <img class="howOrder-image" src="./images/howOrder.jpg" alt="">
+                </div>
+                
+            </div>
+            <button class="orderBtn" type="button">Złóż zamówienie</button>
+        </section>
+
+        <section class="myProjects">
+            <div class="contanier">
+                <h2 class="section-header">Moje projekty</h2>
+                <div class="filters">
+                    <button class="filter-btn" data-category="all">Wszystkie</button>
+                    <button class="filter-btn" data-category="toys">Pluszaki</button>
+                    <button class="filter-btn" data-category="decoration">Ozdoby</button>
+                    <button class="filter-btn" data-category="gifts">Na prezent</button>
+                </div>
+                
+                <div class="products">
+                    <div class="product-card" data-category="toys">
+                        <img class="productImg" src="./images/projekty/fioletowa lalka.jpg" alt="lilac wood doll Lilly">
+                        <h3 class="productName">Lawendowa lalka - Lilly</h3>
+                        <p class="description">Opis produktu 1</p>
+                        <p class="size">Rozmiar:</p>
+                        <p class="productionTime">Czas realizacji:</p>
+                        <p class="price">Cena:</p>
+                    </div>
+                    <div class="product-card" data-category="toys">
+                        <img class="productImg" src="./images/projekty/kotki.jpg" alt="wood cats">
+                        <h3 class="productName">Kotki</h3>
+                        <p class="description">Opis produktu 1</p>
+                        <p class="size">Rozmiar:</p>
+                        <p class="productionTime">Czas realizacji:</p>
+                        <p class="price">Cena:</p>
+                    </div>
+                    <div class="product-card" data-category="toys">
+                        <img class="productImg" src="./images/projekty/niebieska laleczka 2.jpg" alt="blue wool doll Grace">
+                        <h3 class="productName">Niebieska lalka - Grace</h3>
+                        <p class="description">Opis produktu 1</p>
+                        <p class="size">Rozmiar:</p>
+                        <p class="productionTime">Czas realizacji:</p>
+                        <p class="price">Cena</p>
+                    </div>
+                    <div class="product-card" data-category="decoration">
+                        <img class="productImg" src="./images/projekty/aniołki na choinę.jpg" alt="">
+                        <h3 class="productName">Makramowe aniołki</h3>
+                        <p class="description">Opis produktu 1</p>
+                        <p class="size">Rozmiar:</p>
+                        <p class="productionTime">Czas realizacji:</p>
+                        <p class="price">Cena:</p>
+                    </div>
+                    <div class="product-card" data-category="toys">
+                        <img class="productImg" src="./images/projekty/jednorożec.jpg" alt="uniqorn">
+                        <h3 class="productName">Jednorożec</h3>
+                        <p class="description">Opis produktu 1</p>
+                        <p class="size">Rozmiar:</p>
+                        <p class="productionTime">Czas realizacji:</p>
+                        <p class="price">Cena:</p>
+                    </div>
+                    <div class="product-card" data-category="gifts">
+                        <img class="productImg" src="./images/projekty/metryczka 1.jpg" alt="">
+                        <h3 class="productName">Metryczki</h3>
+                        <p class="description">Opis produktu 1</p>
+                        <p class="size">Rozmiar:</p>
+                        <p class="productionTime">Czas realizacji:</p>
+                        <p class="price">Cena:</p>
+                    </div>
+                    <div class="product-card" data-category="toys">
+                        <img class="productImg" src="./images/projekty/jedzenie.jpg" alt="">
+                        <h3 class="productName">Produkty spożywcze</h3>
+                        <p class="description">Opis produktu 1</p>
+                        <p class="size">Rozmiar:</p>
+                        <p class="productionTime">Czas realizacji:</p>
+                        <p class="price">Cena:</p>
+                    </div>
+                    <div class="product-card" data-category="gifts">
+                        <img class="productImg" src="./images/projekty/pamiątka komunii.jpg" alt="">
+                        <h3 class="productName">Metryczki</h3>
+                        <p class="description">Opis produktu 1</p>
+                        <p class="size">Rozmiar:</p>
+                        <p class="productionTime">Czas realizacji:</p>
+                        <p class="price">Cena:</p>
+                    </div>
+                    <div class="product-card" data-category="gifts">
+                        <img class="productImg" src="./images/projekty/lisek.jpg" alt="wool fox">
+                        <h3 class="productName">Lisek Leon</h3>
+                        <p class="description">Opis produktu 1</p>
+                        <p class="size">Rozmiar:</p>
+                        <p class="productionTime">Czas realizacji:</p>
+                        <p class="price">Cena:</p>
+                    </div>
+                    <div class="product-card" data-category="toys">
+                        <img class="productImg" src="./images/projekty/aniołek.jpg" alt="wool angel">
+                        <h3 class="productName">Aniołek</h3>
+                        <p class="description">Opis produktu 1</p>
+                        <p class="size">Rozmiar:</p>
+                        <p class="productionTime">Czas realizacji:</p>
+                        <p class="price">Cena:</p>
+                    </div>
+                    <div class="product-card" data-category="toys">
+                        <img class="productImg" src="./images/projekty/dinozaur.jpg" alt="">
+                        <h3 class="productName">Dinozaur</h3>
+                        <p class="description">Opis produktu 1</p>
+                        <p class="size">Rozmiar:</p>
+                        <p class="productionTime">Czas realizacji:</p>
+                        <p class="price">Cena:</p>
+                    </div>
+                    <div class="product-card" data-category="toys">
+                        <img class="productImg" src="./images/projekty/siedzący króliczek.jpg" alt="">
+                        <h3 class="productName">Siedzący króliczek</h3>
+                        <p class="description">Opis produktu 1</p>
+                        <p class="size">Rozmiar:</p>
+                        <p class="productionTime">Czas realizacji:</p>
+                        <p class="price">Cena:</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>

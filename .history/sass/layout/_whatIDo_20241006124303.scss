@@ -1,0 +1,30 @@
+.whatIDo {
+}
+
+.whatIDo .container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "images whatIDo"; 
+}
+.whatIDo-images {
+    display: flex;
+    grid-area: images;
+}
+
+.whatIDo-image {
+    width: 300px;
+}
+
+.whatIDo-description {
+    width: ;
+    grid-area: whatIDo;
+}
+
+.section-header {
+}
+
+.section-text {
+}

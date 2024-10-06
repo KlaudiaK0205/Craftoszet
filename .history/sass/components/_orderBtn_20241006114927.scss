@@ -1,0 +1,16 @@
+.orderBtn {
+    font-size: 20px;
+    color: var(--mainColor);
+    background-color: var(--brandColor);
+    border: none;
+    border-radius: 25px;
+    margin-left: auto;
+    padding: 15px 25px;
+
+    &:hover,
+    :focus {
+        transform: scale(1.2);
+    }
+}
+
+//animations
