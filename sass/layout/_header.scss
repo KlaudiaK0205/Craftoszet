@@ -1,0 +1,23 @@
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    height: 10vh;
+}
+
+#logo {
+    margin-right: auto;
+}
+
+.nav__list {
+    display: flex
+}
+.nav__item {
+
+    &:not(:last-child) {
+        margin-right: 20px;
+    }
+}
+
+.orderBtn {
+}

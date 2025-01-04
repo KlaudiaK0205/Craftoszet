@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Unikatowe maskotki i ozdoby na szydełku, ręcznie wykonane z dbałością o każdy detal. Dodaj ciepła i uroku do swojego wnętrza.">
+    <title>Craftoszet</title>
+    <!-- FAVICON -->
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="./images/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="./images/favicon-32x32.png" type="image/png">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sacramento&display=swap" rel="stylesheet">
+    <!-- MODERN NORMALIZE -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css">
+    <!-- ANIMATE-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./sass/main.css">
+</head>
+<body>
+    <div class="container">
+        <header id="header">
+            <!-- LOGO -->
+            <a id="logo" href="./index.html" aria-label="Strona główna Craftoszet">
+                <img id="logo-icon" src="./images/logo.png" alt="logo firmy Craftoszet">
+            </a>
+            <!-- BURGER-MENU -->
+            <button id="burger-menu" type="button" aria-label="Menu">
+                <svg>
+                    <use href="./images/sprite.svg#icon-burger"></use>
+                </svg>
+            </button>
+            <!-- BURGER MENU MODAL -->
+
+            <!-- NAVIGATION -->
+            <nav id="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="./index.html#whatIDo" class="nav__link">Czym się zajmuję?</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./index.html#howOrder" class="nav__link">Jak zamówić?</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#myProjects" class="nav__link">Moje projekty</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./index.html#contact" class="nav__link">Kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- ORDER BUTTON -->
+            <button id="burgerOrderBtn" type="button">Złóż zamówienie</button>
+        </header>
+
+        <main>
+            <section id="myProjects">
+                <div class="filters">
+                    <h2 class="section-header">Moje projekty</h2>
+
+                    <button class="filter-btn" data-category="all">Wszystkie</button>
+                    <button class="filter-btn" data-category="toys">Pluszaki</button>
+                    <button class="filter-btn" data-category="decoration">Ozdoby</button>
+                    <button class="filter-btn" data-category="gifts">Na prezent</button>
+                </div>
+                
+                <div class="products">
+                    <div class="product-card" data-category="toys">
+                        <img class="productImg" src="./images/projekty/fioletowa-lalka.jpg" alt="lilac wood doll Lilly">
+                        <h3 class="productName">Lawendowa lalka - Lilly</h3>
+                        <p class="size">Rozmiar: 
+                            <span>35 cm</span>
+                        </p>
+                        <p class="productionTime">Czas realizacji: 
+                            <span>4 tygodnie</span>
+                        </p>
+                        <p class="price">Cena: 
+                            <span>120 zł</span>
+                        </p>
+                    </div>
+                    <div class="product-card" data-category="toys">
+                        <img class="productImg" src="./images/projekty/kotki.jpg" alt="wool cats">
+                        <h3 class="productName">Kotki</h3>
+                        <p class="size">Rozmiar: 
+                            <span></span>
+                        </p>
+                        <p class="productionTime">Czas realizacji: 
+                            <span></span>
+                        </p>
+                        <p class="price">Cena: 
+                            <span></span>
+                        </p>
+                    </div>
+                    <div class="product-card" data-category="toys">
+                        <img class="productImg" src="./images/projekty/niebieska-laleczka 2.jpg" alt="blue wool doll Grace">
+                        <h3 class="productName">Niebieska lalka - Grace</h3>
+                        <p class="size">Rozmiar: 
+                            <span></span>
+                        </p>
+                        <p class="productionTime">Czas realizacji: 
+                            <span></span>
+                        </p>
+                        <p class="price">Cena: 
+                            <span></span>
+                        </p>
+                    </div>
+                    <div class="product-card" data-category="decoration">
+                        <img class="productImg" src="./images/projekty/aniołki-na-choinę.jpg" alt="">
+                        <h3 class="productName">Makramowe aniołki</h3>
+                        <p class="size">Rozmiar: 
+                            <span></span>
+                        </p>
+                        <p class="productionTime">Czas realizacji: 
+                            <span></span>
+                        </p>
+                        <p class="price">Cena: 
+                            <span></span>
+                        </p>
+                    </div>
+                    <div class="product-card" data-category="toys">
+                        <img class="productImg" src="./images/projekty/jednorożec.jpg" alt="uniqorn">
+                        <h3 class="productName">Jednorożec</h3>
+                        <p class="size">Rozmiar: 
+                            <span></span>
+                        </p>
+                        <p class="productionTime">Czas realizacji: 
+                            <span></span>
+                        </p>
+                        <p class="price">Cena: 
+                            <span></span>
+                        </p>
+                    </div>
+                    <div class="product-card" data-category="gifts">
+                        <img class="productImg" src="./images/projekty/metryczka1.jpg" alt="">
+                        <h3 class="productName">Metryczki</h3>
+                        <p class="size">Rozmiar: 
+                            <span></span>
+                        </p>
+                        <p class="productionTime">Czas realizacji: 
+                            <span></span>
+                        </p>
+                        <p class="price">Cena: 
+                            <span></span>
+                        </p>
+                    </div>
+                    <div class="product-card" data-category="toys">
+                        <img class="productImg" src="./images/projekty/jedzenie.jpg" alt="">
+                        <h3 class="productName">Produkty spożywcze</h3>
+                        <p class="size">Rozmiar: 
+                            <span></span>
+                        </p>
+                        <p class="productionTime">Czas realizacji: 
+                            <span></span>
+                        </p>
+                        <p class="price">Cena: 
+                            <span></span>
+                        </p>
+                    </div>
+                    <div class="product-card" data-category="gifts">
+                        <img class="productImg" src="./images/projekty/pamiątka-komunii.jpg" alt="">
+                        <h3 class="productName">Metryczki</h3>
+                        <p class="size">Rozmiar: 
+                            <span></span>
+                        </p>
+                        <p class="productionTime">Czas realizacji: 
+                            <span></span>
+                        </p>
+                        <p class="price">Cena: 
+                            <span></span>
+                        </p>
+                    </div>
+                    <div class="product-card" data-category="toys">
+                        <img class="productImg" src="./images/projekty/lisek.jpg" alt="wool fox">
+                        <h3 class="productName">Lisek Leon</h3>
+                        <p class="size">Rozmiar: 
+                            <span></span>
+                        </p>
+                        <p class="productionTime">Czas realizacji: 
+                            <span></span>
+                        </p>
+                        <p class="price">Cena: 
+                            <span></span>
+                        </p>
+                    </div>
+                    <div class="product-card" data-category="toys">
+                        <img class="productImg" src="./images/projekty/aniołek.jpg" alt="wool angel">
+                        <h3 class="productName">Aniołek</h3>
+                        <p class="size">Rozmiar: 
+                            <span></span>
+                        </p>
+                        <p class="productionTime">Czas realizacji: 
+                            <span></span>
+                        </p>
+                        <p class="price">Cena: 
+                            <span></span>
+                        </p>
+                    </div>
+                    <div class="product-card" data-category="toys">
+                        <img class="productImg" src="./images/projekty/dinozaur.jpg" alt="">
+                        <h3 class="productName">Dinozaur</h3>
+                        <p class="size">Rozmiar: 
+                            <span></span>
+                        </p>
+                        <p class="productionTime">Czas realizacji: 
+                            <span></span>
+                        </p>
+                        <p class="price">Cena: 
+                            <span></span>
+                        </p>
+                    </div>
+                    <div class="product-card" data-category="toys">
+                        <img class="productImg" src="./images/projekty/siedzący-króliczek.jpg" alt="">
+                        <h3 class="productName">Siedzący króliczek</h3>
+                        <p class="size">Rozmiar: 
+                            <span></span>
+                        </p>
+                        <p class="productionTime">Czas realizacji: 
+                            <span></span>
+                        </p>
+                        <p class="price">Cena: 
+                            <span></span>
+                        </p>
+                    </div>
+                    <div class="product-card" data-category="toys">
+                        <img class="productImg" src="./images/projekty/kurka.jpg" alt="">
+                        <h3 class="Kurka Hania">Metryczki</h3>
+                        <p class="size">Rozmiar: 
+                            <span></span>
+                        </p>
+                        <p class="productionTime">Czas realizacji: 
+                            <span></span>
+                        </p>
+                        <p class="price">Cena: 
+                            <span></span>
+                        </p>
+                    </div>
+                    <div class="product-card" data-category="toys">
+                        <img class="productImg" src="./images/projekty/kurczaczek-i-pisanki.jpg" alt="">
+                        <h3 class="productName">Kurczaczek i pisanki</h3>
+                        <p class="size">Rozmiar: 
+                            <span></span>
+                        </p>
+                        <p class="productionTime">Czas realizacji: 
+                            <span></span>
+                        </p>
+                        <p class="price">Cena: 
+                            <span></span>
+                        </p>
+                    </div>
+                    <div class="product-card" data-category="toys">
+                        <img class="productImg" src="./images/projekty/dziewczynka-z-jednorożcem.jpg" alt="">
+                        <h3 class="productName">Lalka z jednorożcem</h3>
+                        <p class="size">Rozmiar:</p>
+                        <p class="productionTime">Czas realizacji:</p>
+                        <p class="price">Cena:</p>
+                    </div>
+                    <div class="product-card" data-category="decoration">
+                        <img class="productImg" src="./images/projekty/skrzat.jpg" alt="">
+                        <h3 class="productName">Siedzący skrzat</h3>
+                        <p class="size">Rozmiar: 
+                            <span></span>
+                        </p>
+                        <p class="productionTime">Czas realizacji: 
+                            <span></span>
+                        </p>
+                        <p class="price">Cena: 
+                            <span></span>
+                        </p>
+                    </div>
+                    <div class="product-card" data-category="toys">
+                        <img class="productImg" src="./images/projekty/elfki.jpg" alt="">
+                        <h3 class="productName">Elfy</h3>
+                        <p class="size">Rozmiar: 
+                            <span></span>
+                        </p>
+                        <p class="productionTime">Czas realizacji: 
+                            <span></span>
+                        </p>
+                        <p class="price">Cena: 
+                            <span></span>
+                        </p>
+                    </div>
+                    <div class="product-card" data-category="decoration">
+                        <img class="productImg" src="./images/projekty/laleczka-na-choinkę.jpg" alt="">
+                        <h3 class="productName">Czerwona laleczka na choinkę</h3>
+                        <p class="size">Rozmiar: 
+                            <span></span>
+                        </p>
+                        <p class="productionTime">Czas realizacji: 
+                            <span></span>
+                        </p>
+                        <p class="price">Cena: 
+                            <span></span>
+                        </p>
+                    </div>
+                    <div class="product-card" data-category="decoration">
+                        <img class="productImg" src="./images/projekty/laleczka-na-choinkę2.jpg" alt="">
+                        <h3 class="productName">Niebieska laleczka na choinkę</h3>
+                        <p class="size">Rozmiar: 
+                            <span></span>
+                        </p>
+                        <p class="productionTime">Czas realizacji: 
+                            <span></span>
+                        </p>
+                        <p class="price">Cena: 
+                            <span></span>
+                        </p>
+                    </div>
+                    <div class="product-card" data-category="decoration">
+                        <img class="productImg" src="./images/projekty/czerwone-bombki.jpg" alt="">
+                        <h3 class="productName">Zawieszki na choinkę</h3>
+                        <p class="size">Rozmiar: 
+                            <span></span>
+                        </p>
+                        <p class="productionTime">Czas realizacji: 
+                            <span></span>
+                        </p>
+                        <p class="price">Cena: 
+                            <span></span>
+                        </p>
+                    </div>
+                    <div class="product-card" data-category="toys">
+                        <img class="productImg" src="./images/projekty/mikołaj-i-pani-mikołajowa.jpg" alt="">
+                        <h3 class="productName">Mikołajkowa ekipa</h3>
+                        <p class="size">Rozmiar: 
+                            <span></span>
+                        </p>
+                        <p class="productionTime">Czas realizacji: 
+                            <span></span>
+                        </p>
+                        <p class="price">Cena: 
+                            <span></span>
+                        </p>
+                    </div>
+                    <div class="product-card" data-category="toys">
+                        <img class="productImg" src="./images/projekty/bałwanki.jpg" alt="">
+                        <h3 class="productName">Bałwanek</h3>
+                        <p class="size">Rozmiar: 
+                            <span></span>
+                        </p>
+                        <p class="productionTime">Czas realizacji: 
+                            <span></span>
+                        </p>
+                        <p class="price">Cena: 
+                            <span></span>
+                        </p>
+                    </div>
+                    <div class="product-card" data-category="toys">
+                        <img class="productImg" src="./images/projekty/krasnale-i-choinka.jpg" alt="">
+                        <h3 class="productName">Świąteczny zestaw</h3>
+                        <p class="size">Rozmiar: 
+                            <span></span>
+                        </p>
+                        <p class="productionTime">Czas realizacji: 
+                            <span></span>
+                        </p>
+                        <p class="price">Cena: 
+                            <span></span>
+                        </p>
+                    </div>
+                    <div class="product-card" data-category="toys">
+                        <img class="productImg" src="./images/projekty/jeż-i-żołędzie.jpg" alt="">
+                        <h3 class="productName">Jeż i żołędzie</h3>
+                        <p class="size">Rozmiar: 
+                            <span></span>
+                        </p>
+                        <p class="productionTime">Czas realizacji: 
+                            <span></span>
+                        </p>
+                        <p class="price">Cena: 
+                            <span></span>
+                        </p>
+                    </div>
+                    <div class="product-card" data-category="toys">
+                        <img class="productImg" src="./images/projekty/króliczek.jpg" alt="">
+                        <h3 class="productName">Króliczek</h3>
+                        <p class="size">Rozmiar: 
+                            <span></span>
+                        </p>
+                        <p class="productionTime">Czas realizacji: 
+                            <span></span>
+                        </p>
+                        <p class="price">Cena: 
+                            <span></span>
+                        </p>
+                    </div>
+                    <div class="product-card" data-category="toys">
+                        <img class="productImg" src="./images/projekty/owieczka.jpg" alt="">
+                        <h3 class="productName">Owieczka Ola</h3>
+                        <p class="size">Rozmiar: 
+                            <span></span>
+                        </p>
+                        <p class="productionTime">Czas realizacji: 
+                            <span></span>
+                        </p>
+                        <p class="price">Cena: 
+                            <span></span>
+                        </p>
+                    </div>
+                    <div class="product-card" data-category="toys">
+                        <img class="productImg" src="./images/projekty/maskotki.jpg" alt="">
+                        <h3 class="productName">Piesek Cookie</h3>
+                        <p class="size">Rozmiar: 
+                            <span></span>
+                        </p>
+                        <p class="productionTime">Czas realizacji: 
+                            <span></span>
+                        </p>
+                        <p class="price">Cena: 
+                            <span></span>
+                        </p>
+                    </div>
+                </div>
+            </section>    
+        </main>
+
+        <footer id="footer"></footer>
+    </div>
+</body>
+</html>

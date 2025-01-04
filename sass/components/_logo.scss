@@ -1,0 +1,18 @@
+#logo-icon {
+    width: 15vw;
+    max-width: 120px;
+    animation: pulse 2s infinite;
+}
+
+// animation
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+      transform: scale(1.03); /* Powiększenie logo */
+    }
+    100% {
+        transform: scale(1);
+    }
+}

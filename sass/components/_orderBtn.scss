@@ -1,0 +1,27 @@
+@media (max-width: 992px) {
+    .burgerOrderBtn {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .burgerOrderBtn {
+        display: block;
+    }
+}
+
+.orderBtn {
+    font-size: clamp(1em, 4vw, 1.125em);
+    background-color: var(--brandColor);
+    color: var(--mainColor);
+    border: none;
+    border-radius: 20px;
+    padding: 15px 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    &:hover,
+    :focus {
+        transform: scale(1.2);
+    }
+}

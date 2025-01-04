@@ -1,0 +1,65 @@
+#contact {
+    display: block;
+    text-align: center;
+}
+
+.section-header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contact-header {
+    color: var(--sectionTextColor);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#contact-form {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contact-form input {
+    margin-bottom: 5px;
+    
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    
+    &:focus {
+        border: 2px solid var(--brandColor);
+        outline: none;
+        caret-color: var(--brandColor);
+    }
+}
+
+#contactBtn {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.social-box {
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.social__link {
+    transition: transform 0.3s ease;
+
+    &:hover,
+    :focus {
+        transform: scale(1.2);
+    }
+}
+
+.icon-facebook {
+    fill: var(--brandColor);
+
+}
+
+@media (max-width: 768px) {
+}

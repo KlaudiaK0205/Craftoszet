@@ -1,0 +1,24 @@
+#slider {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide img {
+    width: 80%;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.active {
+    display: block;
+}

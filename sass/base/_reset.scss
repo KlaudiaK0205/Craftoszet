@@ -1,0 +1,54 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--main-font);
+    background-color: var(--bgColor);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:active, 
+a:visited {
+    color: inherit;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    cursor: pointer;
+}

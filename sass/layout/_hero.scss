@@ -1,0 +1,40 @@
+#hero {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/bg.jpg) center / cover no-repeat fixed;
+    height: 90vh;
+    min-height: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    #hero {
+        background-attachment: scroll; /* Wyłącza efekt paralaksy na małych ekranach */
+        height: 60vh; /* Mniejsza wysokość na urządzeniach mobilnych */
+        padding: 20px 0 40px 0; /* Dostosowany padding na telefonach */
+    }
+}
+
+.hero__header {
+    font-size: clamp(3em, 5vw, 4em);
+    letter-spacing: 0.1em;
+    padding-bottom: 10px;  
+    text-shadow: 2px 2px var(--textShadow);
+}
+
+.hero__undertitle {
+    font-family: var(--decorative-font);
+    font-size: clamp(1.5em, 2.5vw, 3em);
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+    max-width: 85%;
+    padding-bottom: 50px;
+}
+
+.hero__header,
+.hero__undertitle {
+    color: var(--mainColor);
+}

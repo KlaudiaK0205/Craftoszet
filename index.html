@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Unikatowe maskotki i ozdoby na szydełku, ręcznie wykonane z dbałością o każdy detal. Dodaj ciepła i uroku do swojego wnętrza.">
+    <title>Craftoszet</title>
+    <!-- FAVICON -->
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="./images/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="./images/favicon-32x32.png" type="image/png">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sacramento&display=swap" rel="stylesheet">
+    <!-- MODERN NORMALIZE -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css">
+    <!-- ANIMATE-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./sass/main.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header id="header">
+            <!-- LOGO -->
+            <a id="logo" href="./index.html" aria-label="Strona główna Craftoszet">
+                <img id="logo-icon" src="./images/logo.png" alt="logo firmy Craftoszet">
+            </a>
+
+            <!-- BURGER-MENU -->
+            <button id="burger-menu" type="button" aria-label="Menu">
+                <svg>
+                    <use href="./images/sprite.svg#icon-burger"></use>
+                </svg>
+            </button>
+
+            <!-- BURGER MENU MODAL -->
+
+
+            <!-- NAVIGATION -->
+            <nav id="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#whatIDo" class="nav__link">Czym się zajmuję?</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#howOrder" class="nav__link">Jak zamówić?</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./myProjects.html" class="nav__link">Moje projekty</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- ORDER BUTTON -->
+            <button class="burgerOrderBtn" type="button">Złóż zamówienie</button>
+        </header>
+
+        <main>
+
+            <!-- HERO -->
+            <section id="hero">
+                <h1 class="hero__header">Craftoszet</h1>
+                <p class="hero__undertitle">Z pasji do włóczki – ręcznie tworzone z sercem</p>
+                <button class="orderBtn" type="button">Złóż zamówienie</button>
+            </section>
+
+            <!-- WHAT I DO -->
+            <section id="whatIDo">
+                <div class="whatIDo-images">
+                    <img class="whatIDo-image" src="./images/projekty/fioletowa-lalka.jpg" alt="fioletowa lalka z włóczki">
+                    <img class="whatIDo-image" src="./images/projekty/króliczek.jpg" alt="króliczek w niebieskich spodenkach z włóczki">
+                </div>
+                <div class="whatIDo-description">
+                    <h2 class="section-header">Czym się zajmuję?</h2>
+                    <p class="section-text">Tworzę unikatowe, ręcznie robione ozdoby i      maskotki na szydełku, które łączą tradycję z nowoczesnym designem. 
+                    Każdy projekt powstaje z pasji i dbałości o najdrobniejsze detale. 
+                    Włóczka to mój materiał, z którego wyplatam radość i ciepło, tworząc wyjątkowe przedmioty, które cieszą nie tylko oko, ale również duszę. 
+                    Każda moja praca to małe dzieło sztuki, które wnosi do Twojego wnętrza niepowtarzalny klimat.</p>
+                    <p class="section-text2">Wierzę, że piękno tkwi w indywidualności i ręcznej pracy.</p>
+                    <!-- ORDER BUTTON -->
+                    <button class="orderBtn" type="button">Złóż zamówienie</button>
+                </div>
+            </section>
+
+            <!-- HOW ORDER -->
+            <section id="howOrder">
+                <h2 class="section-header">Jak zamówić?</h2>
+
+                <div class="howOrder-box">
+                    <ul class="howOrder__list">
+                        <li class="howOrder__item">
+                            <svg class="howOrder-icon">
+                                <use href="./images/sprite.svg#icon-wool-ball"></use>
+                            </svg>
+                            Wybierz projekt i dodaj go do koszyka
+                        </li>
+                        <li class="howOrder__item">
+                            <svg class="howOrder-icon">
+                                <use href="./images/sprite.svg#icon-wool-ball"></use>
+                            </svg>
+                            Wypełnij formularz: "Złóż zamówienie"
+                        </li>
+                        <li class="howOrder__item">
+                            <svg class="howOrder-icon">
+                                <use href="./images/sprite.svg#icon-wool-ball"></use>
+                            </svg>
+                            Potwierdź swoje zamówienie
+                        </li>
+                        <li class="howOrder__item">
+                            <svg class="howOrder-icon">
+                                <use href="./images/sprite.svg#icon-wool-ball"></use>
+                            </svg>
+                            Zrelaksuj się czekając na swoje zamówienie
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="howOrder-img"></div>
+                <!-- ORDER BUTTON -->
+                <button class="orderBtn" type="button">Złóż zamówienie</button>
+            </section>
+
+            <!-- MY PROJECTS -->
+            <section id="myProjects">
+                <h2 class="section-header">Moje projekty</h2>
+                <!-- SLIDER -->
+                <div id="slider">
+                    <div class="slide"><img src="images/slider/slide1.jpg" alt="lalka Grace"></div>
+                    <div class="slide"><img src="images/slider/slide2.jpg" alt="Skrzat"></div>
+                    <div class="slide"><img src="images/slider/slide3.jpg" alt="zimowy miś"></div>
+                    <div class="slide"><img src="images/slider/slide4.jpg" alt="pamiątka komunii"></div>
+                    <div class="slide"><img src="images/slider/slide5.jpg" alt="aniołek"></div>
+                    <div class="slide"><img src="images/slider/slide6.jpg" alt="nałwanki"></div>
+                    <div class="slide"><img src="images/slider/slide7.jpg" alt="elfki"></div>
+                    <div class="slide"><img src="images/slider/slide8.jpg" alt="fioletowa-lalka"></div>
+                    <div class="slide"><img src="images/slider/slide9.jpg" alt="króliczek"></div>
+                    <div class="slide"><img src="images/slider/slide10.jpg" alt="owieczka"></div>
+                </div>
+
+                <!-- MORE BUTTON -->
+                <a id="moreBtn" href="myProjects.html">Zobacz wszystkie</a>
+            </section>
+
+            <!-- CONTACT -->
+            <section id="contact">
+                <h2 class="section-header">Skontaktuj się ze mną</h2>
+                <div class="contact-box">
+                    <h3 class="contact-header">Masz pytania?<br> Napisz wiadomość!</h3>
+                    <!-- CONTACT FORM -->
+                    <form id="contact-form" action="send_email.php" method="POST">
+                        <label for="username" hidden>Imię</label>
+                        <input type="text" id="username" name="username" placeholder="Imię" required>
+                        <label for="usersurname" hidden>Nazwisko</label>
+                        <input type="text" id="usersurname" name="usersurname" placeholder="Nazwisko" required>
+                        <label for="email" hidden>Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                        <label for="phone" hidden>Telefon kontaktowy</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Telefon kontaktowy" required>
+                        <label for="message" hidden>Wiadomość</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Wiadomość" required></textarea>
+                        <button id="contactBtn" type="submit">Wyślij</button>
+                    </form>
+                </div>
+                <!-- SOCIAL LINK -->
+                <div class="social-box">
+                    <h3 class="contact-header">Obserwuj mnie na:</h3>
+                    <a href="https://www.facebook.com/amigurumiszydelko" target="_blank" aria-label="facebook" rel="noopener noreferrer">
+                        <svg class="social__link" width="30" height="30">
+                            <use class="icon-facebook" href="./images/sprite.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer id="footer">
+            <p class="footer-text">
+                <svg class="footer-icon">
+                    <use href="./images/sprite.svg#icon-wool-ball"></use>
+                </svg>
+                    <span>CRAFTOSZET</span>&copy; 2024 Wszelkie prawa zastrzeżone.
+            </p>
+        </footer>
+    </div>
+
+    <script src="./js/slider.js"></script>
+</body>
+</html>

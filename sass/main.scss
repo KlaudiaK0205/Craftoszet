@@ -1,0 +1,19 @@
+@import './base/container';
+@import './base/reset';
+
+@import './components/burger';
+@import './components/contactBtn';
+@import './components/logo';
+@import './components/moreBtn';
+@import './components/orderBtn';
+@import './components/slider';
+
+@import './layout/contact';
+@import './layout/footer';
+@import './layout/header';
+@import './layout/hero';
+@import './layout/howOrder';
+@import './layout/myProjects';
+@import './layout/whatIDo';
+
+@import './utils/variables';

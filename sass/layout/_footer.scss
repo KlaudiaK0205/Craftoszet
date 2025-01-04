@@ -1,0 +1,23 @@
+#footer {
+    color: var(--textColor);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-text {
+    min-width: 300px;
+    letter-spacing: 0.02em;   
+}
+
+.footer-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    fill: var(--brandColor);
+}
+
+#footer span {
+    font-weight: 500;
+    color: var(--brandColor);
+    margin-right: 5px;
+}

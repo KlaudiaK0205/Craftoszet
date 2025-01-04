@@ -1,0 +1,52 @@
+#howOrder .section-header {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.howOrder-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.howOrder__list {
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.howOrder__item {
+    display: flex;
+    width: 280px;
+    color: var(--sectionTextColor);
+    align-items: center;
+    
+    &:not(:last-child) {
+    padding-bottom: 15px;
+    }
+}
+
+.howOrder-icon {
+    width: 25px;
+    height: 25px;
+    fill: var(--brandColor);
+    margin-right: 5px;
+}
+
+.howOrder-image {
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.howOrder-img {
+    width: 100%;
+    height: 250px;
+    margin: 20px auto;
+    border-radius: 10px;
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+    url('/./images/howOrder.jpg') center / cover no-repeat;
+}
+
+#howOrder .orderBtn {
+    display: block;
+    margin: 20px auto;
+}

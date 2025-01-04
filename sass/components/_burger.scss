@@ -1,0 +1,30 @@
+#burger-menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#burger-menu svg {
+    width: 8vw;
+    height: 8vw;
+}
+
+@media (max-width: 992px) {
+    #burger-menu {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    #burger-menu {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+}

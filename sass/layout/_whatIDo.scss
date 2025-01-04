@@ -1,0 +1,64 @@
+#whatIDo {
+    position: relative;
+    background-image: url(../images/violetWool.png), url(../images/whiteWool.png), url(../images/beigeWool.png);
+    background-position: -5% 69%, 40% 85%, 100% 97%;
+    background-size: 150px, 280px, 210px;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.whatIDo-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.whatIDo-image {
+    border-radius: 10px;
+    width: 300px;
+}
+
+.whatIDo-description {
+    display: block;
+    padding: 20px;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+}
+.section-header {
+    font-family: var(--decorative-font);
+    font-size: clamp(2em, 5vw, 3.25em);
+    color: var(--mainColor);
+    text-shadow: 2px 2px var(--textShadow);
+    letter-spacing: clamp(0.05em, 3vw, 0.1em);
+}
+.section-text {
+    font-size: clamp(1em, 3vw, 1.5em);
+    text-align: justify;
+    color: var(--sectionTextColor)
+}
+
+.section-text,
+.section-text2 {
+    padding: 15px 0;
+    
+}
+
+.section-text2 {
+    font-size: clamp(1.2em, 3vw, 1.7em);
+    color:var(--mainColor);
+    text-shadow: 2px 2px var(--textShadow);
+
+}
+
+#whatIDo .orderBtn {
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    #whatIDo {
+        background-position: 10% 60%, 50% 85%, 90% 100%;
+        background-size: 200px, 300px, 250px;
+    }
+}
